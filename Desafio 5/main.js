@@ -27,7 +27,7 @@ let quantitySelected = Number(prompt(`¿Que cantidad queres agregar?`));
 
 
 function multiplicar(price, quantity) {
-    precioFinal = price * quantity
+    precioFinal = price * quantity;
     return precioFinal;
 }
 
