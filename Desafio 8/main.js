@@ -33,9 +33,6 @@ divTit.appendChild(titulo);
 
 const crearCartas = document.querySelector("#contenedor1");
 
-
-
-
 const selector = document.querySelector("#product");
 
 selector.addEventListener("change", eventoSelector);
