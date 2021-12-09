@@ -50,6 +50,7 @@ function filtrarCards() {
 input.addEventListener("keyup", filtrarCards);
 filtrarCards();
 
+
 /* Agregamos al cartito */
 
 const btnAgregarTo = document.querySelector("#btnCard1")
@@ -84,7 +85,7 @@ const toLS = JSON.parse(toGet);
 const prLS = JSON.parse(prGet);
 const coLS = JSON.parse(coGet);
 
-/* Vemos pedido en Modal */
+Vemos pedido en Modal
 
 const btnVer = document.querySelector("#verPedido")
 btnVer.addEventListener("click", mostrarCarrito)
