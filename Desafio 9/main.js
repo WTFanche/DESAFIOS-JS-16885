@@ -35,7 +35,7 @@ divTit.appendChild(titulo); */
 
 // AGREGAMOS ELEMENTOS AL DOM CON jQuery
 
-$("#desa").append(`<p>INTERACTUAR CON HTML</p>`);
+$("#desa").append(`<p>INCORPORAR JQUERY AL PROYECTO </p>`);
 
 $("#tit").append(`<p>BIENVENIDO A LA TIENDA DE SOMOS LUNA</p>`);
 
