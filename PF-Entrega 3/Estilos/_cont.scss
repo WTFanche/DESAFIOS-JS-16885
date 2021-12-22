@@ -1,0 +1,152 @@
+.header__img--con {
+    background-image: url(../Media/bodycontacto.jpg);
+}
+
+.main__formBg {
+    background-color: #E1ECFF;
+}
+
+// EN ESTE ARCHIVO ENCONTRARA LAS MEDIAS QUERIES DE TODA LA SECCION CONTACTO
+
+@media (min-width: 320px) {
+    .mi-nav {
+        text-align: center;
+    }
+
+    .header__tit--con {
+        line-height: 1.3;
+        margin-top: 200px;
+    }
+
+    .main__txCont {
+        margin-top: 20px;
+        p {
+            margin-top: 10px;
+        }
+    }
+
+    .main_formCont {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .main__lab {
+        font-size: $fonts + 1;
+    }
+
+    .futer__redes--con {
+        margin-top: 12px;
+    }
+}
+
+@media (min-width: 360px) {
+
+    .mi-nav {
+        text-align: center;
+    }
+
+    .header__tit--con {
+        line-height: 1.3;
+        margin-top: 250px;
+    }
+
+    .main__lab {
+        font-size: $fonts + 2;
+    }
+
+}
+
+
+@media (min-width: 375px) {
+    .header__tit--con {
+        line-height: 1.3;
+        margin-top: 250px;
+    }
+
+    .main__txCont {
+        margin-top: 20px;
+        p {
+            margin-top: 10px;
+            letter-spacing: 1px;
+        }
+    }
+
+}
+
+
+@media (min-width: 411px) {
+
+    .header__tit--con {
+        line-height: 1.3;
+        margin-top: 280px;
+    }
+
+    .main__txCont {
+        p {
+            margin-top: 10px;
+            letter-spacing: 2px;
+        }
+    }
+
+}
+
+
+@media (min-width: 768px) {
+    .header__tit--con {
+        line-height: 1.3;
+        margin-top: 300px;
+    }
+
+    .main__txCont {
+        p {
+            font-size: $fonts + 1;
+            margin-top: 10px;
+            letter-spacing: 2px;
+        }
+    }
+
+    .main__lab {
+        font-size: $fonts + 4;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+    .header__tit--con {
+        line-height: 1.3;
+        margin-top: 300px;
+    }
+
+    .main__txCont {
+        p {
+            font-size: $fonts - 1;
+            margin-top: 10px;
+        }
+    }
+
+}
+
+@media (min-width: 1200px) {
+    
+    .header__tit--con {
+        line-height: 1.3;
+        margin-top: 300px;
+    }
+
+}
+
+@media (min-width: 1600px) {
+    .header__tit--con {
+        line-height: 1.3;
+        margin-top: 400px;
+    }
+
+    .main__lista {
+        font-size: $fonts;
+    }
+
+    .futer_redes--pro {
+        margin-top: 8px;
+    }
+}

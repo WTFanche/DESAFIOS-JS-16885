@@ -1,0 +1,315 @@
+// EN ESTE ARCHIVO ENCONTRARA LAS MEDIAS QUERIES DE TODA LA SECCION NOSOTRAS
+
+@media (min-width: 320px) {
+    .header__img--nos {
+        background-image: url(../Media/bodynosotras.jpg);
+        background-position: right;
+    }
+
+    .header__tit--nos {
+        line-height: 1.3;
+        margin-top: 210px;
+    }
+
+    .mi-nav {
+        text-align: center;
+    }
+
+    .main__cont--nos {
+        margin-top: 20px;
+    }
+
+    .main__tx--nos {
+        margin-top: 15px;
+    }
+
+    .futer__redes--nos {
+        margin-top: 15px;
+
+        li {
+            font-size: $fonts - 5;
+            letter-spacing: 2px;
+            padding: 2px;
+        }
+    }
+}
+
+@media (min-width: 360px) {
+
+    .header__img--ini {
+        background-image: url(../Media/ArbolLunar.jpeg);
+        background-position: right;
+    }
+
+    .header__tit--nos {
+        line-height: 1.3;
+        margin-top: 235px;
+    }
+
+    .mi-nav {
+        text-align: center;
+    }
+
+    .main__img--nos {
+        margin-left: 16px;
+    }
+
+    .main__cont--nos {
+        margin-top: 20px;
+    }
+
+    .main__tx--nos {
+        margin-top: 15px;
+    }
+
+    .futer__redes--nos {
+        margin-top: 13px;
+
+        li {
+            font-size: $fonts - 2;
+            letter-spacing: 2px;
+            padding: 2px;
+        }
+    }
+
+}
+
+
+@media (min-width: 375px) {
+    .header__tit--nos {
+        line-height: 1.3;
+        margin-top: 255px;
+    }
+
+    .main__img--nos {
+        margin-left: 23px;
+    }
+}
+
+
+@media (min-width: 411px) {
+
+    .header__tit--nos {
+        line-height: 1.3;
+        margin-top: 300px;
+    }
+
+    .main__img--nos {
+        margin-left: 43px;
+    }
+
+    .main__frase--nos {
+        font-size: $fonts;
+    }
+
+    .futer {
+        margin-top: 15px;
+    }
+
+}
+
+@media (min-width: 576px) {
+    .main__img--nos {
+        margin-left: 120px;
+    }
+
+    .main__frase--nos {
+        font-size: $fonts + 2;
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    .header__tit--nos {
+        line-height: 1.3;
+        margin-top: 400px;
+    }
+
+    .main__img--nos {
+        margin-left: 210px;
+    }
+
+    .main__cont--nos {
+        margin-top: 25px;
+    }
+
+    .main__frase--nos {
+        font-size: $fonts + 9;
+    }
+
+    .futer__redes--nos {
+        margin-top: 10px;
+
+        li {
+            font-size: $fonts - 2;
+            letter-spacing: 6px;
+            padding: 6px;
+
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .header__tit--nos {
+        line-height: 1.3;
+        margin-top: 320px;
+    }
+
+    .main__img--nos {
+        margin-left: 50px - 35px;
+    }
+
+    .main__cont--nos {
+        margin-top: 25px;
+        margin-bottom: 35px;
+    }
+
+    .main__tx--nos {
+        padding-top: 8px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .futer {
+        margin-top: 25px;
+    }
+
+    .futer__redes--nos {
+        margin-top: 10px;
+
+        li {
+            font-size: $fonts - 2;
+            letter-spacing: 6px;
+            padding: 5px;
+
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .header__tit--nos {
+        line-height: 1.3;
+        margin-top: 320px;
+    }
+
+    .main__img--nos {
+        margin-left: 50px - 35px;
+    }
+
+    .main__cont--nos {
+        margin-top: 25px;
+        margin-bottom: 35px;
+    }
+
+    .main__tx--nos {
+        padding-top: 32px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .futer {
+        margin-top: 25px;
+    }
+
+    .futer__redes--nos {
+        margin-top: 10px;
+
+        li {
+            font-size: $fonts - 2;
+            letter-spacing: 6px;
+            padding: 5px;
+
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .header__tit--nos {
+        line-height: 1.3;
+        margin-top: 320px;
+    }
+
+    .main__img--nos {
+        margin-left: 50px - 35px;
+    }
+
+    .main__cont--nos {
+        margin-top: 25px;
+        margin-bottom: 35px;
+    }
+
+    .main__tx--nos {
+        padding-top: 32px;
+        padding-left: 20px;
+        padding-right: 80px;
+    }
+
+    .futer {
+        margin-top: 25px;
+    }
+
+    .futer__redes--nos {
+        margin-top: 10px;
+
+        li {
+            font-size: $fonts - 2;
+            letter-spacing: 6px;
+            padding: 5px;
+
+        }
+    }
+}
+
+
+@media (min-width: 1400px) {
+    .header__tit--nos {
+        line-height: 1.3;
+        margin-top: 320px;
+    }
+
+    .main__img--nos {
+        margin-left: 50px - 35px;
+    }
+
+    .main__cont--nos {
+        margin-top: 25px;
+        margin-bottom: 35px;
+    }
+
+    .main__tx--nos {
+        padding-top: 32px;
+        padding-left: 20px;
+        padding-right: 110px;
+    }
+
+    .futer {
+        margin-top: 25px;
+    }
+
+    .futer__redes--nos {
+        margin-top: 10px;
+
+        li {
+            font-size: $fonts - 2;
+            letter-spacing: 6px;
+            padding: 5px;
+
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .header__tit--nos {
+        line-height: 1.3;
+        margin-top: 400px;
+    }
+
+    .main__lista {
+        font-size: $fonts;
+    }
+
+    .futer_redes--pro {
+        margin-top: 8px;
+    }
+}

@@ -25,14 +25,14 @@ const btn = document.querySelector("#prueba")
 const mostrar = document.querySelector(".main__cardConten")
 
 
-function filtrarCards() {
+$("#nombreP").keyup(() => {
     mostrar.innerHTML = "";
     const entrada = input.value.toLowerCase();
     for (let producto of productos) {
         let nombre = producto.nombre.toLowerCase();
         if (nombre.indexOf(entrada) !== -1) {
             mostrar.innerHTML += `
-                <article class="card col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 main__card main__cardsh hover1 main_cardPadd" style="width: 18rem;">
+                <article class="card col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 main__card main__cardsh main_cardPadd" style="width: 18rem;">
                     <div class="card-body text-center">
                         <p class="card-text text-capitalize main__ff3 fst-italic fw-bold">${producto.nombre}</p>
                         <p>$${producto.precio}</p>
@@ -45,15 +45,77 @@ function filtrarCards() {
     if (mostrar.innerHTML === "") {
         mostrar.innerHTML += `<p>No tenemos el producto que estas buscando.</p>`
     }
-};
-
-input.addEventListener("keyup", filtrarCards);
-filtrarCards();
-
+});
 
 
 
 /* Agregamos al cartito */
+
+const carrito = [];
+
+// agregar carrito a LS
+
+function agregarALS(carro) {
+    localStorage.setItem("Carrito", JSON.stringify(carro))
+}
+
+$("#btnCard1").click(() => {
+    //push de producto al ARRAY carrito
+    console.log("Pusheo toallita al carrito");
+    carrito.push({id: 1, nombre: "Toallita", precio: 300})
+    console.log(carrito);
+    /* agregao carrito a LS */
+    agregarALS(carrito);
+});
+
+$("#btnCard2").click(() => {
+    //push de producto al ARRAY carrito
+    console.log("Pusheo protector al carrito");
+    carrito.push({id: 2, nombre: "Protector diario", precio: 240})
+    console.log(carrito);
+    /* agregao carrito a LS */
+    agregarALS(carrito);
+});
+
+$("#btnCard3").click(() => {
+    //push de producto al ARRAY carrito
+    console.log("Pusheo copa al carrito");
+    carrito.push({id: 3,nombre: "Copa menstrual",precio: 650})
+    console.log(carrito);
+    /* agregao carrito a LS */
+    agregarALS(carrito);
+});
+
+// Vemos pedido desde LS en modal
+
+$("#verPedido").click(() => {
+   const carroLS = localStorage.getItem("Carrito");
+   const carroMod = JSON.parse(carroLS);
+   console.log(carroMod);
+  for (const producto of carroMod) {
+      console.log(producto);
+      $("#modalBody").append(`
+      <p>${producto.nombre} ................  $${producto.precio}</p>
+      `
+      );
+  }
+   return carroMod;
+});
+
+/* Borramos pedido */
+
+function borrarPedido() {
+    localStorage.clear();
+    const limpiarMod = document.querySelector("#modalBody")
+    limpiarMod.innerHTML = ` `
+};
+
+const borrar = document.querySelector("#borrarPedido")
+borrar.addEventListener("click", borrarPedido);
+
+
+
+
 
 /* const btnAgregarTo = document.querySelector("#btnCard1")
 const btnAgregarPr = document.querySelector("#btnCard2")
@@ -102,7 +164,7 @@ const modal = document.querySelector("#modalBody") */
     <p>${prLS.nombre}                   $${prLS.precio}</p>
 
     <p>${coLS.nombre}                   $${coLS.precio}</p>
-    
+
     <p>TOTAL                            $${toLS.precio + prLS.precio + coLS.precio}</p>
     `
 }; */
