@@ -48,8 +48,8 @@ $("#nombreP").keyup(() => {
 });
 
 
-
-/* Agregamos al cartito */
+/* 
+//Agregamos al cartito
 
 const carrito = [];
 
@@ -64,7 +64,7 @@ $("#btnCard1").click(() => {
     console.log("Pusheo toallita al carrito");
     carrito.push({id: 1, nombre: "Toallita", precio: 300})
     console.log(carrito);
-    /* agregao carrito a LS */
+    //agrego carrito a LS
     agregarALS(carrito);
 });
 
@@ -73,7 +73,7 @@ $("#btnCard2").click(() => {
     console.log("Pusheo protector al carrito");
     carrito.push({id: 2, nombre: "Protector diario", precio: 240})
     console.log(carrito);
-    /* agregao carrito a LS */
+    //agregao carrito a LS
     agregarALS(carrito);
 });
 
@@ -82,7 +82,7 @@ $("#btnCard3").click(() => {
     console.log("Pusheo copa al carrito");
     carrito.push({id: 3,nombre: "Copa menstrual",precio: 650})
     console.log(carrito);
-    /* agregao carrito a LS */
+    //agregao carrito a LS
     agregarALS(carrito);
 });
 
@@ -102,7 +102,7 @@ $("#verPedido").click(() => {
    return carroMod;
 });
 
-/* Borramos pedido */
+Borramos pedido
 
 function borrarPedido() {
     localStorage.clear();
@@ -113,11 +113,9 @@ function borrarPedido() {
 const borrar = document.querySelector("#borrarPedido")
 borrar.addEventListener("click", borrarPedido);
 
+---------------------------------------------------------
 
-
-
-
-/* const btnAgregarTo = document.querySelector("#btnCard1")
+const btnAgregarTo = document.querySelector("#btnCard1")
 const btnAgregarPr = document.querySelector("#btnCard2")
 const btnAgregarCo = document.querySelector("#btnCard3")
 
